@@ -15,9 +15,9 @@ jobs:
           java-version: '11'
           distribution: 'adopt'
       - name: Run a verifier
-        uses: AlexanderPrendota/kotlin-samples-verifier@master
+        uses: kuyeol/kotlin-samples-verifier@master
         with:
-          push-repository: 'https://github.com/AlexanderPrendota/kotlin-compiler-server'
+          push-repository: 'https://github.com/kuyeol/kotlin-by-example'
           tag-filter: '#tag="code" & class="language-run-kotlin" & !validate="false"'
           push-path: 'src/test/resources/test-compile-data/jvm/kotlin-by-example'
           username: '${{ secrets.KOTLIN_BY_EXAMPLE_TOKEN }}' #token with an access to create PR in push-repository and issue in this repository
